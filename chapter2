@@ -10,3 +10,42 @@ Exercise 2.22
 public Date(string month, int day, int year)
 {
 }
+
+Exercise 2.23
+
+The getBalance method and the getPrice method are both public members and integer types.
+The getBalance method returns the balance field.
+The getPrice method returns the price field, which is equal to the cost.
+
+Exercise 2.24
+
+A call to getBalance can be characterised as "What is the balance?"
+
+Exercise 2.25
+
+No, the return statement in the body of the method does not need to be changed.
+The name of an accessor method does not need to relate to the name of the field associated with it.
+
+Exercise 2.26
+
+/**
+ * Return the total amount of money collected
+ */
+public int getTotal()
+{
+  return total;
+}
+
+Exercise 2.27
+
+Missing return statement.
+
+Exercise 2.28
+
+The getPrice and printTicket are both public members.
+The getPrice is type integer.
+The printTicket is type void (does not have a return type).
+
+Exercise 2.29
+
+No, insertMoney and printTicket do not have return types because they have void in the method header.
