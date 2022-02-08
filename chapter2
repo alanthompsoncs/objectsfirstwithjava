@@ -49,3 +49,6 @@ The printTicket is type void (does not have a return type).
 Exercise 2.29
 
 No, insertMoney and printTicket do not have return types because they have void in the method header.
+
+Exercise 2.30
+
