@@ -52,3 +52,43 @@ No, insertMoney and printTicket do not have return types because they have void 
 
 Exercise 2.30
 
+Ticket machine created with price 100.
+The getBalance method returns a value of 0.
+insertMoney method called with value 50 inputted.
+The getBalance method now returns value 50.
+
+Exercise 2.31
+
+The setPrice header does not have TicketMachine in it (the class name).
+
+Exercise 2.32
+
+public void setPrice(int cost)
+{
+  price = cost;
+}
+
+Exercise 2.33
+
+/**
+* Increase score by the given number of points.
+*/
+public void increase(int points)
+{
+  score += points;
+}
+
+Exercise 2.34
+
+Yes, increase changes the state of score therefore it is a mutator.
+You could demonstrate it by checking the value of score before and after the increase method is executed.
+
+Exercise 2.35
+
+/**
+* Reduce price by the given amount.
+*/
+public void discount(int amount)
+{
+price -= amount;
+}
