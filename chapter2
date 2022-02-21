@@ -92,3 +92,19 @@ public void discount(int amount)
 {
 price -= amount;
 }
+
+Exercise 2.36
+
+My cat has green eyes.
+
+Exercise 2.37
+
+public void prompt()
+{
+  System.out.println("Please insert the correct amount of money.");
+}
+
+Exercise 2.38
+
+The string "price" would be printed rather than the value of price:
+# price cents.
