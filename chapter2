@@ -1,33 +1,106 @@
-Exercise 2.21
+Exercise 2.1
 
+Exercise 2.2
+After printing a ticket, the balance is the amount of money inserted less the ticket price
+
+Exercise 2.3
+The ticketmachine takes as much money as you put into it
+The ticketmachine will still print a ticket, even if the balance is less than the price of a ticket
+
+Exercise 2.4
+
+Exercise 2.5
+The printed ticket looks exactly the same as those printed by the first machine, except the value is different
+
+Exercise 2.6
+public class Student
+{
+
+}
+
+public class LabClass
+{
+
+}
+
+Exercise 2.7
+Yes, the class public TicketMachine does not work
+The class diagram is now hatched in BlueJ
+Error message displayed: <identifier> expected
+
+Exercise 2.8
+Yes, the word public can be left out of the class header
+
+Exercise 2.9
+No, the word class cannot be left out of the class header
+
+Exercise 2.10
+Fields: price, balance, total
+Constructors: TicketMachine(int cost)
+Methods: getPrice, getBalance, insertMoney, printTicket
+
+Exercise 2.11
+The constructor does not have a data type, and states the name of the class
+
+Exercise 2.12
+int
+Student
+Server
+
+Exercise 2.13
+alive
+tutor
+game
+
+Exercise 2.14
+Student
+Server
+Person
+
+Exercise 2.15
+Yes, the field must be in the order private int price;
+
+Exercise 2.16
+Yes, a semicolon is always required at the end of a field declaration
+
+Exercise 2.17
+private int status;
+
+Exercise 2.18
+Student
+
+Exercise 2.19
+2 parameters - title (type String) and price (type double)
+
+Exercise 2.20
+double & String
+price would need a decimal number so double can be used
+title would need words to be represented so String can be used
+
+Exercise 2.21
 public Pet(String petsName)
 {
   name = petsName;
 }
 
 Exercise 2.22
-
-public Date(string month, int day, int year)
+public Date(String month, int day, int year)
 {
 }
 
 Exercise 2.23
-
 The getBalance method and the getPrice method are both public members and integer types.
 The getBalance method returns the balance field.
-The getPrice method returns the price field, which is equal to the cost.
+The getPrice method returns the price field.
 
 Exercise 2.24
-
 A call to getBalance can be characterised as "What is the balance?"
 
 Exercise 2.25
-
 No, the return statement in the body of the method does not need to be changed.
 The name of an accessor method does not need to relate to the name of the field associated with it.
 
 Exercise 2.26
-
 /**
  * Return the total amount of money collected
  */
@@ -37,39 +110,32 @@ public int getTotal()
 }
 
 Exercise 2.27
-
 Missing return statement.
 
 Exercise 2.28
-
 The getPrice and printTicket are both public members.
 The getPrice is type integer.
 The printTicket is type void (does not have a return type).
 
 Exercise 2.29
-
-No, insertMoney and printTicket do not have return types because they have void in the method header.
+No, insertMoney and printTicket do not have return types because they have void in the method header
 
 Exercise 2.30
-
 Ticket machine created with price 100.
 The getBalance method returns a value of 0.
 insertMoney method called with value 50 inputted.
 The getBalance method now returns value 50.
 
 Exercise 2.31
-
 The setPrice header does not have TicketMachine in it (the class name).
 
 Exercise 2.32
-
 public void setPrice(int cost)
 {
   price = cost;
 }
 
 Exercise 2.33
-
 /**
 * Increase score by the given number of points.
 */
@@ -79,12 +145,10 @@ public void increase(int points)
 }
 
 Exercise 2.34
-
 Yes, increase changes the state of score therefore it is a mutator.
 You could demonstrate it by checking the value of score before and after the increase method is executed.
 
 Exercise 2.35
-
 /**
 * Reduce price by the given amount.
 */
@@ -94,17 +158,104 @@ price -= amount;
 }
 
 Exercise 2.36
-
 My cat has green eyes.
 
 Exercise 2.37
-
 public void prompt()
 {
   System.out.println("Please insert the correct amount of money.");
 }
 
 Exercise 2.38
-
 The string "price" would be printed rather than the value of price:
 # price cents.
+
+Exercise 2.39
+The string "# price cents." would be printed (not the fields)
+
+Exercise 2.40
+No, the field price is not being called, only strings with text is being printed
+
+Exercise 2.41
+public void showPrice()
+{
+    System.out.println("The price of a ticket is " + price + " cents");
+}
+
+Exercise 2.42
+ticketMa1 created with cost 100 cents, ticketMa2 created with cost 200 cents
+Executing ticketMa1's showPrice method outputs "The price of a ticket is 100 cents"
+Executing ticketMa2's showPrice method outputs "The price of a ticket is 200 cents"
+The value of price is based on cost, therefore the price method will output the cost that is inputted when each object is created.
+
+Exercise 2.43
+There is no longer a prompt to assign a cost to a new TicketMachine object
+
+Exercise 2.44
+public TicketMachine()
+{
+    price = 1000;
+    balance = 0;
+    total = 0;
+}
+
+public TicketMachine(int cost)
+{
+    price = cost;
+}
+
+Exercise 2.45
+public void empty()
+{
+    total = 0;
+}
+This method does not need to take any parameters. It is a mutator method that is changing the total field to 0.
+
+Exercise 2.46
+If the value is positive, then it is added to the balance.
+However, if the value is equal to or less than 0, a message is printed asking the user to use a positive amount.
+
+Exercise 2.47
+If the user inputs a value of 0 as the amount when the insertMoney method is executed, no error message appears and 0 is added to the balance.
+
+public void insertMoney(int amount)
+{
+    if(amount >= 0) {
+        balance = balance + amount;
+    }
+    else {
+        System.out.println("Use a positive amount rather than: " +
+                           amount);
+    }
+}
+
+Exercise 2.48
+public void insertMoney(int amount)
+{
+    if(amount >= 0) {
+        System.out.println("Use a positive amount rather than: " + amount);
+    }
+    else {
+        balance = balance + amount;
+    }
+}
+
+Exercise 2.49
+The boolean field in class figures is isVisible (it controlled the visibility of the circle objects).
+Yes, it was well suited to being controlled by a type with only two different values, because the circle object is either visible or not visible.
+If the transparency of the circle was to be a scale from 1 - 100, then a boolean type would not be suitable.
+
+Exercise 2.50
+In the printTicket method, Code 2.1 makes the balance 0, where Code 2.8 reduces the balance by the price of a ticket
+(given the balance is high enough for a ticket to be printed)
+Furthermore, Code 2.1 updates the total to total + balance, where Code 2.8 updates the total to total + price
+(represents the total value of printed tickets)
+
+Exercise 2.51
+The code still compiles with the else block removed from the printTicket method
+BlueJ does nothing if a ticket is printed without inserting any money
+
+Exercise 2.52
+No, the if statement checks that balance is >= price before another ticket is printed, therefore balance cannot be changed to a negative value
+
+Exercise 2.53
