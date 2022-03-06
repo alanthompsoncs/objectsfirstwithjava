@@ -259,3 +259,42 @@ Exercise 2.52
 No, the if statement checks that balance is >= price before another ticket is printed, therefore balance cannot be changed to a negative value
 
 Exercise 2.53
+(arithmetic operators shown in Appendix C)
+
+Exercise 2.54
+saving = price * discount;
+
+Exercise 2.55
+mean = total / count;
+
+Exercise 2.56
+if (price > budget)
+{
+  System.out.println("Too expensive");
+}
+else
+{
+  System.out.println("Just right");
+}
+
+Exercise 2.57
+if (price > budget)
+{
+  System.out.println("Too expensive, the budget is " + budget / 2);
+}
+else
+{
+  System.out.println("Just right");
+}
+
+Exercise 2.58
+The refundBalance does not record the amount to refund before it changes the balance to 0
+To test this method, replace the original refundBalance method with the new method and compare the execution of the method
+
+Exercise 2.59
+TicketMachine does not compile. The balance field cannot be changed to 0 after the refundBalance method has returned a value for balance.
+
+Exercise 2.60
+Yes, TicketMachine still compiles. However, price is equal to 0 when inspected.
+By adding "int" before "price", it is changed to a local variable, so it will not record the value of cost once the object is created.
+
