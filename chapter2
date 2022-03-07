@@ -308,66 +308,181 @@ public int emptyMachine()
 
 Exercise 2.62
 public void printTicket()
-    {
-        int amountLeftToPay;
-        amountLeftToPay = price - balance;
+{
+  int amountLeftToPay;
+  amountLeftToPay = price - balance;
         
-        if(amountLeftToPay <= 0) {
-            // Simulate the printing of a ticket.
-            System.out.println("##################");
-            System.out.println("# The BlueJ Line");
-            System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
-            System.out.println("##################");
-            System.out.println();
+  if(amountLeftToPay <= 0) {
+    // Simulate the printing of a ticket.
+    System.out.println("##################");
+    System.out.println("# The BlueJ Line");
+    System.out.println("# Ticket");
+    System.out.println("# " + price + " cents.");
+    System.out.println("##################");
+    System.out.println();
 
-            // Update the total collected with the price.
-            total = total + price;
-            // Reduce the balance by the price.
-            balance = balance - price;
-        }
-        else {
-            System.out.println("You must insert at least: " + amountLeftToPay + " more cents.");
+    // Update the total collected with the price.
+    total = total + price;
+    // Reduce the balance by the price.
+    balance = balance - price;
+  }
+  else {
+  System.out.println("You must insert at least: " + amountLeftToPay + " more cents.");
                     
-        }
-    }
+  }
+}
 
-    Exercise 2.63
-    Another method for the discounted ticket needs to be added, which means another field for the discounted price needs to be added.
-    New field added:
-    private int discount;
+Exercise 2.63
+Another method for the discounted ticket needs to be added, which means another field for the discounted price needs to be added.
+New field added:
+private int discount;
 
-    Constructor modified:
-    public TicketMachine(int cost, int concession)
-    {
-        price = cost;
-        balance = 0;
-        total = 0;
-        discount = concession;
-    }
+Constructor modified:
+public TicketMachine(int cost, int concession)
+{
+  price = cost;
+  balance = 0;
+  total = 0;
+  discount = concession;
+}
 
-    New method added:
-    public void printDiscountedTicket()
-    {
-        int amountLeftToPay;
-        amountLeftToPay = discount - balance;
+New method added:
+public void printDiscountedTicket()
+{
+  int amountLeftToPay;
+  amountLeftToPay = discount - balance;
         
-        if(amountLeftToPay <= 0) {
-            // Simulate the printing of a ticket.
-            System.out.println("##################");
-            System.out.println("# The BlueJ Line");
-            System.out.println("# Ticket");
-            System.out.println("# " + discount + " cents.");
-            System.out.println("##################");
-            System.out.println();
+  if(amountLeftToPay <= 0) {
+    // Simulate the printing of a ticket.
+    System.out.println("##################");
+    System.out.println("# The BlueJ Line");
+    System.out.println("# Ticket");
+    System.out.println("# " + discount + " cents.");
+    System.out.println("##################");
+    System.out.println();
 
-            // Update the total collected with the price.
-            total = total + discount;
-            // Reduce the balance by the price.
-            balance = balance - discount;
-        }
-        else {
-            System.out.println("You must insert at least: " + amountLeftToPay + " more cents.");
+    // Update the total collected with the price.
+    total = total + discount;
+    // Reduce the balance by the price.
+    balance = balance - discount;
+  }
+  else {
+    System.out.println("You must insert at least: " + amountLeftToPay + " more cents.");
                     
-        }
+  }
+}
+
+
+Exercise 2.64
+Name: getCode
+Return type: String
+
+Exercise 2.65
+Method name: setCredits
+Parameter name: creditValue
+Parameter type: int
+
+Exercise 2.66
+public class Person
+{
+  //insert code here
+}
+
+Exercise 2.67
+private String name;
+private int age;
+private String code;
+private int credits;
+
+Exercise 2.68
+public Module(String moduleCode)
+{
+  code = moduleCode;
+}
+
+Exercise 2.69
+public Person(String myName, int myAge)
+{
+  name = myName;
+  age = myAge;
+}
+
+Exercise 2.70
+The return type cannot be void:
+public int getAge()
+{
+return age;
+}
+
+Exercise 2.71
+public String getName()
+{
+  return name;
+}
+
+Exercise 2.72
+public void setAge(int newAge)
+{
+  age = newAge;
+}
+
+Exercise 2.73
+public void printDetails()
+{
+  System.out.println("The name of this person is " + name);
+}
+
+Exercise 2.74
+student1
+Student
+fullName: Benjamin Johnson
+studentID: 738321
+
+Exercise 2.75
+Henr557
+
+Exercise 2.76
+Error - StringIndexOutOfBoundsException (length is 3 but end is 4)
+
+Exercise 2.77
+public Student(String fullName, String studentID)
+{
+    if (fullName.length() < 4)
+    {
+        System.out.println("Error, name is too short.");
+        name = fullName;
     }
+    else
+    {
+        name = fullName;
+    }
+    if (studentID.length() < 3)
+    {
+        System.out.println("Error, ID is too short.");
+        id = studentID;
+    }
+    else
+    {
+    id = studentID;            
+    }
+
+    credits = 0;
+}
+
+Exercise 2.78
+public String getLoginName()
+{
+    if (name.length() < 4 && id.length() >=3)
+    {
+        return name + id.substring(0,3);
+    }
+    else if (id.length() < 3 && name.length() >= 4)
+    {
+        return name.substring(0,4) + id;
+    }
+    else
+    {
+        return name + id;
+    }
+}
+
