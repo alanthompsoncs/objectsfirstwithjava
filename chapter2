@@ -298,3 +298,76 @@ Exercise 2.60
 Yes, TicketMachine still compiles. However, price is equal to 0 when inspected.
 By adding "int" before "price", it is changed to a local variable, so it will not record the value of cost once the object is created.
 
+Exercise 2.61
+public int emptyMachine()
+{
+    int emptyTotal = total;
+    total = 0;
+    return emptyTotal;
+}
+
+Exercise 2.62
+public void printTicket()
+    {
+        int amountLeftToPay;
+        amountLeftToPay = price - balance;
+        
+        if(amountLeftToPay <= 0) {
+            // Simulate the printing of a ticket.
+            System.out.println("##################");
+            System.out.println("# The BlueJ Line");
+            System.out.println("# Ticket");
+            System.out.println("# " + price + " cents.");
+            System.out.println("##################");
+            System.out.println();
+
+            // Update the total collected with the price.
+            total = total + price;
+            // Reduce the balance by the price.
+            balance = balance - price;
+        }
+        else {
+            System.out.println("You must insert at least: " + amountLeftToPay + " more cents.");
+                    
+        }
+    }
+
+    Exercise 2.63
+    Another method for the discounted ticket needs to be added, which means another field for the discounted price needs to be added.
+    New field added:
+    private int discount;
+
+    Constructor modified:
+    public TicketMachine(int cost, int concession)
+    {
+        price = cost;
+        balance = 0;
+        total = 0;
+        discount = concession;
+    }
+
+    New method added:
+    public void printDiscountedTicket()
+    {
+        int amountLeftToPay;
+        amountLeftToPay = discount - balance;
+        
+        if(amountLeftToPay <= 0) {
+            // Simulate the printing of a ticket.
+            System.out.println("##################");
+            System.out.println("# The BlueJ Line");
+            System.out.println("# Ticket");
+            System.out.println("# " + discount + " cents.");
+            System.out.println("##################");
+            System.out.println();
+
+            // Update the total collected with the price.
+            total = total + discount;
+            // Reduce the balance by the price.
+            balance = balance - discount;
+        }
+        else {
+            System.out.println("You must insert at least: " + amountLeftToPay + " more cents.");
+                    
+        }
+    }
