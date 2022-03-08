@@ -1,0 +1,14 @@
+Exercise 3.1
+Object diagram: LabClass (contains its own fields, plus one field that contains the student objects) <- 3x Student objects (each containing fields)
+
+Class diagram: LabClass -> 3x Student objects
+
+Exercise 3.2
+When a class is created or deleted - since a class can be a field type, if a method changes that field then the class will change
+
+Exercise 3.3
+When an object is added or removed - since fields can hold objects, if a method changes that field then the object will change
+
+Exercise 3.4
+private Instructor tutor;
+
