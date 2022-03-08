@@ -486,3 +486,169 @@ public String getLoginName()
     }
 }
 
+Exercise 2.79
+99 + 3 = 102 (int)
+"cat" + "fish" = "catfish" (String)
+"cat" + 9 = "cat9" (String)
+9 + 3 + "cat" = "12cat" (String)
+"cat" + 3 + 9 = "cat39" (String)
+"catfish".substring(3,4) = "f" (String)
+"catfish".substring(3,8) = error, string index out of bounds
+
+Exercise 2.80
+t1.getBalance returns 0 (int) after object t1 is created.
+t1.getBalance returns 500 after t1.insertMoney(500) is executed.
+
+Exercise 2.81
+t2.getBalance() = 500 (int)
+
+Exercise 2.82
+t2.getBalance = 1000 (int)
+The field t2 is equal to the value of t1, so when 500 was inserted into t1, it added to the existing 500.
+
+Exercise 2.83
+public String getAuthor()
+{
+    return author;
+}
+
+public String getTitle()
+{
+    return title;
+}
+
+Exercise 2.84
+public void printAuthor()
+{
+    System.out.println("The author of this book is " + author);
+}
+
+    public void printTitle()
+{
+    System.out.println("The title of this book is " + title);
+}
+
+Exercise 2.85
+public Book(String bookAuthor, String bookTitle, int bookPages)
+{
+  author = bookAuthor;
+  title = bookTitle;
+  pages = bookPages;
+}
+
+public String getAuthor()
+  {
+    return author;
+  }
+    
+public int getPages()
+  {
+    return pages;
+  }
+    
+public String getTitle()
+  {
+    return title;
+  }
+
+Exercise 2.86
+Yes, the Book objects are immutable because there are no mutator methods in the current program to change their value
+
+Exercise 2.87
+public void printDetails()
+{
+    System.out.println("Title: " + title + ", Author: " + author + ", Pages: " + pages);
+}
+
+Exercise 2.88
+refNumber = "";
+
+public String getRefNumber()
+{
+    return refNumber;
+}
+
+public void setRefNumber(String ref)
+{
+    refNumber = ref;
+}
+
+Exercise 2.89
+public void printDetails()
+{
+    if (refNumber.length() > 0)
+    {
+        System.out.println("Title: " + title + ", Author: " + author + ", Pages: " + pages + ", Reference Number: " + refNumber);
+    }
+    else
+    {
+        System.out.println("Title: " + title + ", Author: " + author + ", Pages: " + pages + ", Reference Number: ZZZ");        
+    }
+}
+
+Exercise 2.90
+public void setRefNumber(String ref)
+{
+    if (ref.length() >= 3)
+    {
+        refNumber = ref;
+    }
+    else
+    {
+        System.out.println("Error, reference number must be at least 3 characters");
+    }
+}
+
+Exercise 2.91
+private int borrowed;
+
+public Book(String bookAuthor, String bookTitle, int bookPages)
+{
+    author = bookAuthor;
+    title = bookTitle;
+    pages = bookPages;
+    refNumber = "";
+    borrowed = 0;
+}
+
+public int getBorrowed()
+{
+    return borrowed;
+}
+
+public void printDetails()
+{
+    if (refNumber.length() > 0)
+    {
+        System.out.println("Title: " + title + ", Author: " + author + ", Pages: " + pages + ", Reference Number: " + refNumber);
+        System.out.println("This book has been borrowed " + borrowed + " times");
+    }
+    else
+    {
+        System.out.println("Title: " + title + ", Author: " + author + ", Pages: " + pages + ", Reference Number: ZZZ");
+        System.out.println("This book has been borrowed " + borrowed + " times");
+    }
+}
+
+public void borrow()
+{
+    borrowed += 1;
+}
+
+Exercise 2.92
+private boolean courseText;
+
+public Book(String bookAuthor, String bookTitle, int bookPages, boolean textBook)
+{
+    author = bookAuthor;
+    title = bookTitle;
+    pages = bookPages;
+    refNumber = "";
+    borrowed = 0;
+    courseText = textBook;
+}
+
+public boolean isCourseText()
+{
+    return courseText;
+}
