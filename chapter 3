@@ -12,3 +12,55 @@ When an object is added or removed - since fields can hold objects, if a method 
 Exercise 3.4
 private Instructor tutor;
 
+Exercise 3.5
+NumberDisplay hours = new NumberDisplay(24);
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+hours.increment();
+
+Exercise 3.6
+NumberDisplay minutes = new NumberDisplay(60);
+The method calls are the object name (hours and minutes)
+The number of increments needs to be counted to ensure the hours object rolls over once the minutes object reaches a value of 60
+
+Exercise 3.7
+NumberDisplay nd = new NumberDisplay(6);
+nd.getValue() = 0 (int)
+nd.setValue(6)
+nd.increment()
+nd.increment()
+nd.increment()
+nd.increment()
+nd.increment()
+nd.getValue() = 5 (int)
+nd.increment()
+nd.getValue() = 0 (int)
+
+Exercise 3.8
+Error: non-static method getValue() cannot be referenced from a static context
+
+Exercise 3.9
+Error: '.class' expected
+nd.setValue(5);
+The method is expecting an int as the parameter but a String was provided
