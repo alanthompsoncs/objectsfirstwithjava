@@ -652,3 +652,72 @@ public boolean isCourseText()
 {
     return courseText;
 }
+
+Exercise 2.93
+public class Heater
+{
+    private double temperature;
+
+    public Heater()
+    {
+        temperature = 15.0;
+    }
+
+    public void warmer()
+    {
+        temperature += 5;
+    }
+    
+    public void cooler()
+    {
+        temperature -= 5;
+    }
+    
+    public double currentTemp()
+    {
+        return temperature;
+    }
+}
+
+Exercise 2.94
+public class Heater
+{
+    private double temperature;
+    private double min;
+    private double max;
+    private double increment;
+
+    public Heater(double minTemp, double maxTemp)
+    {
+        temperature = 15.0;
+        min = minTemp;
+        max = maxTemp;
+        increment = 5.0;
+    }
+
+    public void warmer()
+    {
+        if (temperature < max)
+        {
+            temperature += increment;
+        }
+    }
+    
+    public void cooler()
+    {
+        if (temperature - increment >= 0)
+        {
+            temperature -= increment;
+        }
+    }
+    
+    public double currentTemp()
+    {
+        return temperature;
+    }
+    
+    public void setIncrement(double inc)
+    {
+        increment = inc;
+    }
+}
