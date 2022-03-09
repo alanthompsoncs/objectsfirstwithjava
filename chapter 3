@@ -64,3 +64,73 @@ Exercise 3.9
 Error: '.class' expected
 nd.setValue(5);
 The method is expecting an int as the parameter but a String was provided
+
+Exercise 3.10
+Nothing will happen if the setValue method is called with an illegal value (there is no else block)
+Inserting the following else block is a good solution:
+else
+{
+    System.out.println("Error, the replacement value must be between 0 and " + (limit - 1));
+}
+
+Exercise 3.11
+Nothing will happen if the setValue method is called with a value of 0
+
+Exercise 3.12
+|| is the 'or' logical operator, so there are no illegal numbers (apart from the limits of int)
+
+Exercise 3.13
+! false = true (! is the 'not' logical operator)
+
+Exercise 3.14
+(a && b = true) || (a && b = false)
+
+Exercise 3.15
+(a = true && b = false) || (a = false && b = true)
+
+Exercise 3.16
+(a == b)
+
+Exercise 3.17
+Yes, as long as the limit is within the bounds of int
+
+Exercise 3.18
+No, since "" is an empty String, both expressions will return value as a String
+
+Exercise 3.19
+9 + 3 + "cat" = 12cat (the expression is converted to a String after 9 + 3)
+"cat" + 3 + 9 = cat39 (the expression is converted to a String before 9 + 3)
+
+Exercise 3.20
+The modulo operator produces the remainder of integer division i.e. 10 % 3 = 1 (10 / 3 = 3 remainder 1)
+
+Exercise 3.21
+8 % 3 = 2
+
+Exercise 3.22
+When the numerator is positive and the denominator is negative, the modulo operator returns a positive number
+When the numerator is negative and the denominator is positive, the modulo operator returns a negative number
+
+Exercise 3.23
+1, 2, 3, 4, 0
+
+Exercise 3.24
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+Exercise 3.25
+When the increment method is executed, value is assigned (value + 1) modulo limit
+value will keep increasing by 1 until limit is reached, where it will start back at value = 0
+
+Exercise 3.26
+public void increment()
+{
+    if (value < (limit - 1))
+    {
+        value += 1;
+    }
+    else
+    {
+        value = 0;
+    }
+}
+The modulo operator method is better
