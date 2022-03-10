@@ -134,3 +134,17 @@ public void increment()
     }
 }
 The modulo operator method is better
+
+Exercise 3.27
+The constructor creates an object that sets the value of hours to type NumberDisplay (limit of 24) and minutes to type NumberDisplay (limit of 60)
+The constructor also calls the updateDisplay method, which assigns displayString the hours value and the minutes value
+When getTime is called, it returns displayString, which is equal to the values set when the object was created
+
+Exercise 3.28
+The displayString increases by 1 minute when the timeTick method is called
+The displayString changes to the time inputted when the setTime method is called
+
+Exercise 3.29
+timeTick would need to be called abs(60 - hour * 60 - minute) times to make ClockDisplay show 01:00
+The method setTime could be called with inputs hour = 1 and minute = 0 to display that time
+
