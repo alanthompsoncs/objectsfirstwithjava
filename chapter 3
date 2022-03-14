@@ -214,5 +214,63 @@ public void timeTick()
         updateDisplay();
     }
 
+Exercise 3.39
 
+Exercise 3.40
+public class Tree
+{
+    private Triangle leaves;
+    private Square trunk;
 
+    public Tree()
+    {
+        leaves = new Tree();
+        trunk = new Tree();
+    }
+}
+
+Exercise 3.41
+public class Tree
+{
+    private Triangle leaves;
+    private Square trunk;
+
+    public Tree()
+    {
+        leaves = new Triangle();
+        trunk = new Square();        
+    }
+    
+    public void setup()
+    {
+        trunk.moveHorizontal(-130);
+        trunk.moveVertical(100);
+        leaves.changeSize(120,140);
+        trunk.makeVisible();
+        leaves.makeVisible();
+    }
+}
+
+Exercise 3.42
+
+Exercise 3.43
+MailClient <- MailServer <- MailUser
+
+Exercise 3.44
+
+Exercise 3.45
+
+Exercise 3.46
+
+Exercise 3.47
+The next line that will execute is item.print();
+The item field is not null (a message was sent from Sophie to Juan) so item.print(); will execute
+
+Exercise 3.48
+"No new mail." was printed
+The MailServer class removes the message once it is printed, therefore "No new mail." is printed
+
+Exercise 3.49
+The Debugger displays the item.print(); method i.e. it highlights the System.out.println("From: " + from); line
+
+Exercise 3.50
