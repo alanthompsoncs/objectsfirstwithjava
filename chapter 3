@@ -148,3 +148,71 @@ Exercise 3.29
 timeTick would need to be called abs(60 - hour * 60 - minute) times to make ClockDisplay show 01:00
 The method setTime could be called with inputs hour = 1 and minute = 0 to display that time
 
+Exercise 3.30
+private Rectangle window;
+
+window = new Rectangle(2, 2);
+
+Exercise 3.31
+The second ClockDisplay constructor creates new ClockDisplay objects using the NumberDisplay class
+The constructor has two parameters (hour and minute)
+The value of hour is set to the NumberDisplay object with rollOverLimit of 24
+The value of minute is set to the NumberDisplay object with rollOverLimit of 60
+The constructor then calls the setTime method with parameters hour and minute
+The setTime method sets the hours field with the value of hour using the setTime method from the NumberDisplay class
+The setTime method sets the minutes field with the value of minute using the setTime method from the NumberDisplay class
+The setTime method then calls the updateDisplay method which returns the String getDisplayValue for hours and minutes
+
+Exercise 3.32
+Similarities:
+Both constructors create objects from the NumberDisplay class
+Both constructors update the display with the updateDisplay method
+Differences:
+The first constructor does not set the time
+
+Exercise 3.33
+p1.print("file", true);
+p1.getStatus(5);
+
+Exercise 3.34
+The constructor of class Picture creates object types Square, Triangle, Circle
+
+Exercise 3.35
+roof.changeSize(60, 180);
+roof.moveHorizontal(20);
+roof.moveVertical(-60);
+roof.makeVisible();
+
+Exercise 3.36
+No, the Picture class does not have any internal method calls
+
+Exercise 3.37
+window.changeColor("black"); & sun.changeColor("yellow"); changed to setColor();
+
+Exercise 3.38
+The rollOverLimit of the hours fields of the ClockDisplay constructors chaged to 12
+New method created in the NumberDisplay class:
+    public void increment2()
+    {
+        if (value == 11)
+        {
+            value = 12;
+        }
+        else
+        {
+            value = (value + 1) % limit;
+        }
+    }
+
+The method timeTick changed to the following:
+public void timeTick()
+    {
+        minutes.increment();
+        if(minutes.getValue() == 0) {  // it just rolled over!
+            hours.increment2();
+        }
+        updateDisplay();
+    }
+
+
+
