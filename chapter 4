@@ -1,1 +1,28 @@
 Exercise 4.1
+
+Exercise 4.2
+Nothing happens. There is no else block in the removeFile method so nothing will be returned.
+
+Exercise 4.3
+The second file name is displayed. Due to the first file name being removed from memory, it is replaced with the second file name in the first file name's index.
+
+Exercise 4.4
+private ArrayList<Book> library;
+
+Exercise 4.5
+ArrayList<Student> cs101;
+
+Exercise 4.6
+private ArrayList<MusicTrack> tracks;
+
+Exercise 4.7
+library = new ArrayList<Book>();
+cs101 = new ArrayList<Student>();
+tracks = new ArrayList<MusicTrack>();
+
+library = new ArrayList();
+cs101 = new ArrayList();
+tracks - new ArrayList();
+
+Exercise 4.8
+
