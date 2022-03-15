@@ -274,3 +274,28 @@ Exercise 3.49
 The Debugger displays the item.print(); method i.e. it highlights the System.out.println("From: " + from); line
 
 Exercise 3.50
+
+Exercise 3.51
+
+Exercise 3.52
+Yes, it was interesting to see how each of the methods works in the background by setting breakpoints
+
+Exercise 3.53
+
+Exercise 3.54
+//field that is the subject of the message
+private String subject;
+
+//added to the constructor
+String subject parameter
+this.subject = subject;
+
+//added to the print() method
+System.out.println("Subject: " + subject);
+
+// sendMailItem changed in the MailClient class
+public void sendMailItem(String to, String message, String subject)
+{
+    MailItem item = new MailItem(user, to, message, subject);
+    server.post(item);
+}
