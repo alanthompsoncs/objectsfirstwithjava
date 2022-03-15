@@ -20,9 +20,50 @@ library = new ArrayList<Book>();
 cs101 = new ArrayList<Student>();
 tracks = new ArrayList<MusicTrack>();
 
-library = new ArrayList();
-cs101 = new ArrayList();
-tracks - new ArrayList();
+library = new ArrayList<>();
+cs101 = new ArrayList<>();
+tracks = new ArrayList<>();
 
 Exercise 4.8
+10 - 1 = 9
 
+Exercise 4.9
+items.get(4);
+
+Exercise 4.10
+15 - 1 = 14
+
+Exercise 4.11
+files.add(favouriteTrack);
+
+Exercise 4.12
+dates.remove(2);
+
+Exercise 4.13
+Index 5 (removing index 9 does not change the position)
+
+Exercise 4.14
+public void checkIndex(int index)
+{
+    if(index < 0 || index > (files.size() - 1))
+    {
+        System.out.println("Error, the index must be between 0 and " + (files.size() - 1));
+    }
+}
+
+No, this method only works if the number of files is greater than 0.
+
+Exercise 4.15
+public boolean validIndex(int index)
+{
+    if(index >= 0 && index < (files.size() - 1))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+This method only works if the number of files is greater than 1.
