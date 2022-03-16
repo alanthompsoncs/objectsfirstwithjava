@@ -67,3 +67,46 @@ public boolean validIndex(int index)
 }
 
 This method only works if the number of files is greater than 1.
+
+Exercise 4.16
+
+Exercise 4.17
+Files that are not inputted as "../audio/filname.mp3" return an error with a NullPointerException
+
+Exercise 4.18
+public void listAllFiles()
+{
+   int index = 0;
+   while(index < files.size())
+   {
+        String filename = files.get(index);
+        System.out.println(filename);
+        index += 1;
+    }
+The listAllFiles method does not need a return type because it will simply print the files in the array
+It does not need to take any parameters because we can get the file size from files.size
+
+Exercise 4.19
+No, the number of files increases every time the addSong method is called so there would be an indeterminate number of System.out.println lines
+
+Exercise 4.20
+public void listAllFiles()
+{
+    for(String filename : files) {
+        System.out.println(filename);
+    }
+}
+
+Exercise 4.21
+
+Exercise 4.22
+
+Exercise 4.23
+
+Exercise 4.24
+
+Exercise 4.25
+Nothing is printed when a search string does not match any file names
+
+Exercise 4.26
+
