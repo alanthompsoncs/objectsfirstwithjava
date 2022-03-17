@@ -109,4 +109,57 @@ Exercise 4.25
 Nothing is printed when a search string does not match any file names
 
 Exercise 4.26
+public void playSample(String searchString)
+{
+    for(String filename : files) {
+        if(filename.contains(searchString)) {
+            // A match.
+            player.playSample(filename);
+        }
+        else
+        {
+            System.out.println("No matches");
+        }
+    }
+}
 
+Exercise 4.28
+public void processTracks(String trackName)
+
+Exercise 4.29
+
+Exercise 4.30
+public void multiplesOfFive()
+{
+    int number = 0;
+    while(number <= 95)
+    {
+        number += 5;
+        System.out.println(number);
+    }
+
+}
+
+Exercise 4.31
+public void addTen()
+{
+    int number = 1;
+    int total = 0;
+    while(number <= 10)
+    {
+        total += number;
+        number++;
+    }
+}
+
+Exercise 4.32
+public void sum(int a, int b)
+{
+    int current = a + 1;
+    int total = 0;
+    while(current < b)
+    {
+        total += current;
+        current++;
+    }
+}
