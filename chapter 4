@@ -163,3 +163,90 @@ public void sum(int a, int b)
         current++;
     }
 }
+
+Exercise 4.33
+
+Exercise 4.34
+
+Exercise 4.35
+// Number of times a song has been played
+private int playCount;
+
+private void increasePlayCount()
+{
+    playCount += 1;
+}
+
+private void resetPlayCount()
+{
+    playCount = 0;
+}
+
+Exercise 4.36
+Field:
+private Track count;
+
+Constructor:
+count = new Track("");
+
+playTrack Method:
+public void playTrack(int index)
+{
+    if(indexValid(index)) {
+        Track track = tracks.get(index);
+        player.startPlaying(track.getFilename());
+        System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
+        count.increasePlayCount();
+    }
+}
+
+Exercise 4.37
+
+Exercise 4.38
+Field:
+private boolean playing;
+
+Constructor:
+playing = false;
+
+public void playTrack(int index)
+{
+    if(indexValid(index) && !playing) {
+        Track track = tracks.get(index);
+        player.startPlaying(track.getFilename());
+        System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
+        count.increasePlayCount();
+        playing = true;
+    }
+}
+
+public void stopPlaying()
+{
+    player.stop();
+    playing = false;
+}
+
+Exercise 4.39
+public void removeTracks(String word)
+{
+    Iterator<Track> it = tracks.iterator();
+    while(it.hasNext())
+    {
+        Track t = it.next();
+        String title = t.getTitle();
+        if(title.contains(word))
+        {
+            it.remove();
+        }
+    }
+}
+
+Exercise 4.40
+Exercise 4.41
+Exercise 4.42
+Exercise 4.43
+Exercise 4.44
+Exercise 4.45
+Exercise 4.46
+Exercise 4.47
+
