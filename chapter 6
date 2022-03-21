@@ -1,0 +1,20 @@
+Exercise 6.1
+
+Exercise 6.2
+Each class documentation lists the fields, constructors and methods
+The purpose of each section is to explain how to initialise the field / constructor / method, then describe what it does
+The String class has many more methods than other classes
+
+Exercise 6.3
+Version 1 - startsWith(String prefix) - tests if this string starts with the specified prefix (boolean)
+Version 2 - startsWith(String prefix, int toffset) - tests if the substring of this string beginning at the specified index starts with the specified prefix (boolean)
+
+Exercise 6.4
+endsWith​(String suffix) - Tests if this string ends with the specified suffix (boolean)
+
+Exercise 6.5
+length() - Returns the length of this string (int)
+
+Exercise 6.6
+Word search in the documentation
+It was hard to find some of the methods because you need to input the right keywords
