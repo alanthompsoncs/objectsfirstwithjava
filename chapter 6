@@ -18,3 +18,81 @@ length() - Returns the length of this string (int)
 Exercise 6.6
 Word search in the documentation
 It was hard to find some of the methods because you need to input the right keywords
+
+Exercise 6.7
+public String trim()
+text.trim();
+
+Exercise 6.8
+start method changed to the following:
+    public void start()
+    {
+        boolean finished = false;
+
+        printWelcome();
+
+        while(!finished) {
+            String input = reader.getInput().trim();
+
+            if(input.startsWith("bye")) {
+                finished = true;
+            }
+            else {
+                String response = responder.generateResponse();
+                System.out.println(response);
+            }
+        }
+
+        printGoodbye();
+    }
+
+Exercise 6.9
+start method changed to the following:
+    public void start()
+    {
+        boolean finished = false;
+
+        printWelcome();
+
+        while(!finished) {
+            String input = reader.getInput().trim().toLowerCase();
+
+            if(input.startsWith("bye")) {
+                finished = true;
+            }
+            else {
+                String response = responder.generateResponse();
+                System.out.println(response);
+            }
+        }
+
+        printGoodbye();
+    }
+
+Exercise 6.10
+boolean
+
+Exercise 6.11
+start method changed to the following:
+    public void start()
+    {
+        boolean finished = false;
+
+        printWelcome();
+
+        while(!finished) {
+            String input = reader.getInput().trim().toLowerCase();
+
+            if(input.equals("bye")) {
+                finished = true;
+            }
+            else {
+                String response = responder.generateResponse();
+                System.out.println(response);
+            }
+        }
+
+        printGoodbye();
+    }
+
+Exercise 6.12
