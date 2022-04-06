@@ -18,6 +18,7 @@ length() - Returns the length of this string (int)
 Exercise 6.6
 Word search in the documentation
 It was hard to find some of the methods because you need to input the right keywords
+However, the methods are in alphabetical order which makes it a little easier to find things
 
 Exercise 6.7
 public String trim()
@@ -96,3 +97,74 @@ start method changed to the following:
     }
 
 Exercise 6.12
+The Random class is in the java.util package. It is used to generate a stream of pseudo-random numbers.
+Random() creates a new random number generator
+random.ints() returns an unlimited stream of pseudorandom int values
+
+Exercise 6.13
+Random random = new Random();
+int randNumber = random.ints();
+
+Exercise 6.14
+public void printOneRandom()
+{
+     System.out.println(random.nextInt());
+}
+    
+public void printMultiRandom(int howMany)
+{
+     for (int i = 1; i <= howMany; i++)
+    {
+            System.out.println(random.nextInt());        
+    }
+
+}
+
+Exercise 6.15
+The possible numbers when nextInt(100) is called is 0 to 99
+
+Exercise 6.16
+    public void throwDie()
+    {
+        System.out.println(random.nextInt(6) + 1);
+    }
+
+Exercise 6.17
+    public void getResponse()
+    {
+        switch (random.nextInt(3))
+        {
+            case 0:
+                System.out.println("yes");
+                break;
+            case 1:
+                System.out.println("no");
+                break;
+            case 2:
+                System.out.println("maybe");
+                break;
+        }
+    }
+
+Exercise 6.18
+    public String getResponse()
+    {
+        int i = 0;
+        while (i < random.nextInt(10))
+        {
+            switch (random.nextInt(3))
+            {
+                case 0:
+                    list.add("yes");
+                    break;
+                case 1:
+                    list.add("no");
+                    break;
+                case 2:
+                    list.add("maybe");
+                    break;
+            }
+        }
+        return list.get(random.nextInt(list.size()));
+    }
+
