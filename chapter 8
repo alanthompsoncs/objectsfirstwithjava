@@ -1,0 +1,65 @@
+Exercise 8.1
+The application allows the user to virtually walk to different rooms around a university
+The game accepts commands go, go north, go east, go south, go west, help, exit
+Each command takes you in a direction, assists with commands, or exits the program
+There are 5 rooms in the scenario
+
+Exercise 8.2
+The class Game is the main class of the world of zuul. This class creates and initialises all other classes, creates the rooms, creates the parser and starts the game.
+The class Parser reads input from the user and tries to interpret it as an Adventure command (returns the command as an object of the class Command)
+The class Command holds information about a command that was issued by the user (a command comprises of 2 words - a command word and a second word)
+The CommandWords class checks if the input is a valid command
+The Room class represents one location in the scenery of the game - it is connected to other rooms via exits
+
+Exercise 8.3
+You are walking through the middle of a rainforest with different objects in your backpack. You can find more objects as you walk through the rainforest, but you need to choose to keep things because your backpack has limited storage. Depending on which direction you choose to go, you will encounter different obstacles. The objects in your backpack can be used to avoid or defeat the obstacles. For example, you may come across a swarm of bees; if you have blanket then you can drape yourself to get past the bees. If you do not have a blanket then you must try your luck to get through the swarm or take a different direction. The goal of the game is to reach the edge of the rainforest so you can call a helicopter to take you home.
+
+Exercise 8.4
+
+Exercise 8.5
+New method created:
+
+    private void printLocationInfo()
+    {
+        System.out.println("You are " + currentRoom.getDescription());
+        System.out.print("Exits: ");
+        if(currentRoom.northExit != null) {
+            System.out.print("north ");
+        }
+        if(currentRoom.eastExit != null) {
+            System.out.print("east ");
+        }
+        if(currentRoom.southExit != null) {
+            System.out.print("south ");
+        }
+        if(currentRoom.westExit != null) {
+            System.out.print("west ");
+        }
+        System.out.println();
+    }
+
+code changed to printLocationInfo(); within the printWelcome and goRoom methods
+
+Exercise 8.6
+
+Exercise 8.7
+    private void printLocationInfo()
+    {
+        System.out.println("You are " + currentRoom.getDescription());
+        System.out.print("Exits: ");
+        if(currentRoom.getExit("north") != null) {
+            System.out.print("north ");
+        }
+        if(currentRoom.getExit("east") != null) {
+            System.out.print("east ");
+        }
+        if(currentRoom.getExit("south") != null) {
+            System.out.print("south ");
+        }
+        if(currentRoom.getExit("west") != null) {
+            System.out.print("west ");
+        }
+        System.out.println();
+    }
+
+    

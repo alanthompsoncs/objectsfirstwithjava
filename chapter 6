@@ -168,3 +168,5 @@ Exercise 6.18
         return list.get(random.nextInt(list.size()));
     }
 
+
+
