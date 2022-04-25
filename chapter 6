@@ -168,5 +168,21 @@ Exercise 6.18
         return list.get(random.nextInt(list.size()));
     }
 
+Exercise 6.19
+public int getResponse3(int max)
+{
+    return random.nextInt(max + 1);    
+}
+
+Exercise 6.20
+public int getNumberMinMax(int min, int max)
+{
+    return random.nextInt(max - min + 1) + min;
+}
+
+Exercise 6.21
+Yes, the SecureRandom class can be used to generate random numbers like the Random class
+Random numbers are important for cryptographic security so random codes can be used to protect sensitive information
+
 
 
