@@ -184,5 +184,22 @@ Exercise 6.21
 Yes, the SecureRandom class can be used to generate random numbers like the Random class
 Random numbers are important for cryptographic security so random codes can be used to protect sensitive information
 
+Exercise 6.22
+
+Exercise 6.23
+The response generator will still work if fewer or more responses are added to the responses list
+The generator is based on the size of the ArrayList so it does not matter how many entries there are
+
+Exercise 6.24
+HashMaps store items in key / value pairs that can be accessed with an index of another type e.g. String
+One object is used as a key (index) to another object (value)
+HashMap<String, String> capitalCities = new HashMap<String, String>();
+capitalCities.put("England", "London");
+
+Exercise 6.25
+compute, computeIfAbsent, computeIfPresent, entrySet, get, keySet, merge, put, putAll, remove, Collection
+Yes, the same type can be used for both parameters because items are listed based on the parameter itself
+
+
 
 
