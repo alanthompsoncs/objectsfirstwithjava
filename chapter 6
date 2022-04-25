@@ -200,6 +200,52 @@ Exercise 6.25
 compute, computeIfAbsent, computeIfPresent, entrySet, get, keySet, merge, put, putAll, remove, Collection
 Yes, the same type can be used for both parameters because items are listed based on the parameter itself
 
+Exercise 6.26
+The number of entries in a HashMap can be found with the size() method
 
+Exercise 6.27
+import java.util.HashMap;
 
+public class MapTester
+{
+    private HashMap<String, String> contacts;
+
+    public MapTester()
+    {
+        contacts = new HashMap<String, String>();
+    }
+
+    public void enterNumber(String name, String number)
+    {
+        contacts.put(name, number);
+    }
+    
+    public String lookupNumber(String name)
+    {
+        return contacts.get(name);
+    }
+}
+
+Exercise 6.28
+When a value is added to a key that already exists, the existing value is replaced with the new value
+
+Exercise 6.29
+When two different keys with the same value are added to a HashMap, the same value is stored in each key
+
+Exercise 6.30
+public boolean keyCheck(String key)
+{
+    return contacts.containsKey(key);
+}
+
+Exercise 6.31
+If a HashMap does not contain a key, then the containsKey() method will return false (boolean)
+
+Exercise 6.32
+To print all the keys in a HashMap, use the keySet() method:
+
+public void allKeys()
+{
+    System.out.println(contacts.keySet().toString());
+}
 
