@@ -249,3 +249,39 @@ public void allKeys()
     System.out.println(contacts.keySet().toString());
 }
 
+Exercise 6.33
+public String pickDefaultResponse()
+{
+    int index = randomGenerator.nextInt(responseMap.size());
+    return responseMap.get(index);
+}
+
+Exercise 6.34
+A HashSet is a collection of items where every item is unique, where an ArrayList is a resizable array
+An item can only appear once in a HashSet, where it can appear multiple times in an ArrayList
+
+Exercise 6.35
+The split method can separate a String into different components, based on a separator
+e.g. split (" ") of "This is a string" would be {"This", "is", "a", "string"}
+The split method removes the separator when executed, even if there are multiple iterations of the separator
+e.g. split("d") of "Pudding" would be {"Pu", "ing"}
+
+Exercise 6.36
+split a space = split(" ")
+split a tab = split("\t")
+split a colon = split(":")
+
+Exercise 6.37
+The get(int index) method for an ArrayList returns the element at index
+The contains(Object o) method for a HashSet returns true or false if the element exists
+
+Exercise 6.38
+If there is more than 1 space in a String, then split() will remove all spaces before splitting the elements
+
+Exercise 6.39
+
+Exercise 6.40
+
+Exercise 6.41
+
+
