@@ -281,7 +281,35 @@ If there is more than 1 space in a String, then split() will remove all spaces b
 Exercise 6.39
 
 Exercise 6.40
+compare() - compares 2 object arrays
+copyOf() - copies the specified array
+copyOfRange() - copies the specified range of the specified array
+equals() - returns true if the 2 specified arrays are equal to each other
+fill() - assigns the specified value to each element of the specified array
+hashCode() - returns a hash code based on the contents of the specified array
+mismatch() - finds and returns the index of the first mismatch bewteen arrays
+parallelSort() - sorts the specified array into ascending numerical order
+sort() - sorts the specified array into order
+toString() - returns a string representation of the contents specified in the array
 
 Exercise 6.41
 
+Exercise 6.42
 
+Exercise 6.43
+
+Exercise 6.44
+
+Exercise 6.45
+
+Exercise 6.46
+
+Exercise 6.47
+
+Exercise 6.48
+The putIfAbsent(Key, method) method of HashTable class allows the mapping of value to a given
+key if the given key is not associated with a value or mapped to null
+
+Exercise 6.49
+
+Exercise 6.50
