@@ -313,3 +313,46 @@ key if the given key is not associated with a value or mapped to null
 Exercise 6.49
 
 Exercise 6.50
+
+Exercise 6.51
+The Project Documentation is complete, but does not provide a very detailed description of each method
+The InputReader class documentation is in a different format than the other classes
+
+Exercise 6.52
+The javadoc comments are above each class / constructor / method
+The comments are shown in the documentation, where the key symbols are shown separately
+
+Exercise 6.53
+@author, @code, @docRoot, @deprecated, @exception, @inheritDoc, @link, @linkplain, @param, @return
+@see, @serial, @serialData, @serialField, @since, @throws, @value, @version
+
+Exercise 6.54
+
+Exercise 6.55
+The DrawDemo class consists of the drawSquare, drawWheel, square, colorScribble, and clear method
+The drawSquare method creates an object of the Pen class, at position 320x 260y using the myCanvas object
+    it then draws a square using the square method (private) after setting the pen color blue
+The drawWheel method creates an object of the Pen class, at position 250x 200x using the myCanvas object
+    it then sets the color of the pen as red, and draws 36 squares via iteration
+The square method (private) takes a Pen object parameter, then iterates the move and turn method 4 times
+The colorScribble method creates an object of the Pen class, at position 250x 200y using the myCanvas object
+    it then sets a random color and iterates the randomSquiggle method 10 times
+The clear method uses the erase method in the Canvas class to clear the canvas
+
+Exercise 6.56
+
+Exercise 6.57
+
+Exercise 6.58
+Color.BLUE
+Color.RED 
+
+Exercise 6.59
+Color.BLACK
+Color.CYAN 
+Color.GRAY
+Color.GREEN 
+
+must be called as java.awt.Color.BLACK 
+
+Exercise 6.60
