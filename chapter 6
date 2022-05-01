@@ -486,3 +486,46 @@ Exercise 6.72
 Exercise 6.73
 The speed that the balls fall towards the bottom of the screen increases as gravity is increased
 
+Exercise 6.74
+public static final double TOLERANCE = 0.001;
+private static final int PASS = 40;
+public static final char HELP = 'h';
+
+Exercise 6.75
+static double E (exponential number)
+static double PI (pi number)
+
+Exercise 6.76
+If a number is used in multiple places, there is a chance that a method may change the number, therefore the number should be
+associated with a constant variable to avoid the number being changed
+
+Exercise 6.77
+static int max(int a, int b)
+
+Exercise 6.78
+static methods are accessible without creating an object of that class
+The methods in the Math class could be written as instance methods, but an object would need to be created every time one of the methods was to be used
+
+Exercise 6.79
+public void tenThousand()
+{
+    long time1 = System.currentTimeMillis();
+    for (int i = 1; i <= x; i++)
+    {
+        System.out.println(i += 1);
+    }
+    long time2 = System.currentTimeMillis();
+    System.out.println(time2 - time1);
+}
+
+Exercise 6.80
+A static method can be called from an instance method
+An instance method cannot be called from a static method
+
+Exercise 6.81
+
+Exercise 6.82
+
+Exercise 6.83
+
+Exercise 6.84
