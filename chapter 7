@@ -97,3 +97,13 @@ Exercise 7.27
 The same pattern emerges at each of the starting cells
 Yes, each starting state results in the same pattern i.e. when the reset method is called, Automaton displays one asterisk again
 
+Exercise 7.28
+(i == 0) ? (left = 0) : (left = state[i - 1]);
+(i + 1 < state.length) ? (right = state[i + 1]) : (right = 0);
+
+Exercise 7.29
+To enable the current state to be updated, a temporary variable needs to be used
+because the next state is dependent on the current state
+
+Exercise 7.30
+
