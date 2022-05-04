@@ -12,7 +12,11 @@ The CommandWords class checks if the input is a valid command
 The Room class represents one location in the scenery of the game - it is connected to other rooms via exits
 
 Exercise 8.3
-You are walking through the middle of a rainforest with different objects in your backpack. You can find more objects as you walk through the rainforest, but you need to choose to keep things because your backpack has limited storage. Depending on which direction you choose to go, you will encounter different obstacles. The objects in your backpack can be used to avoid or defeat the obstacles. For example, you may come across a swarm of bees; if you have blanket then you can drape yourself to get past the bees. If you do not have a blanket then you must try your luck to get through the swarm or take a different direction. The goal of the game is to reach the edge of the rainforest so you can call a helicopter to take you home.
+You are walking through the middle of a rainforest with different objects in your backpack. You can find more objects as you walk through the rainforest,
+but you need to choose to keep things because your backpack has limited storage. Depending on which direction you choose to go, you will encounter different obstacles.
+The objects in your backpack can be used to avoid or defeat the obstacles. For example, you may come across a swarm of bees; if you have blanket then you
+can drape yourself to get past the bees. If you do not have a blanket then you must try your luck to get through the swarm or take a different direction.
+The goal of the game is to reach the edge of the rainforest so you can call a helicopter to take you home.
 
 Exercise 8.4
 
@@ -61,5 +65,45 @@ Exercise 8.7
         }
         System.out.println();
     }
+
+Exercise 8.8
+
+Exercise 8.9
+The keySet method of the HashMap class returns a Set view of the keys contained in a map
+
+Exercise 8.10
+The getExitString method works by the following:
+The method defines the String returnString as "Exits:"
+The method defines the Set<String> keys as the Set view of the keys contained in the exits HashMap
+The method uses a for loop to add the Strings in the keys set to the String returnString
+The method then returns the final value of the String returnString
+
+Exercise 8.11
+
+Exercise 8.12
+
+Exercise 8.13
+
+Exercise 8.14
+
+Exercise 8.15
+
+Exercise 8.16
+
+Exercise 8.17
+If another command is added, the Game class does not need to be changed
+The showCommands method calls the command words in the Parser class, so the Game class is independent
+of the command words (low coupling)
+
+Exercise 8.18
+
+Exercise 8.19
+The model-view-controller is a design pattern commonly used for developing user interfaces that divide
+the related program into three interconnected elements. The model is the backend that contains all the
+data logic, the view is the frontend or graphical user interface (GUI), and the controller is the brains
+of the application that controls how the data is displayed. If the world of zuul game was changed so it
+had a graphical user interface rather than a text user interface, then the model-view-controller structure
+could be used. Each function of the program would have its own responsibility.
+
 
     
