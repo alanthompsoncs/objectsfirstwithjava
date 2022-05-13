@@ -105,5 +105,74 @@ of the application that controls how the data is displayed. If the world of zuul
 had a graphical user interface rather than a text user interface, then the model-view-controller structure
 could be used. Each function of the program would have its own responsibility.
 
+Exercise 8.20
+/**
+ * The Item class represents an item in the game
+ *
+ * @author Alan Thompson
+ * @version 13.05.22
+ */
+public class Item
+{
+    // instance variables
+    private String description;
+    private double weight;
 
+    /**
+     * Constructor for objects of class Item
+     */
+    public Item()
+    {
+        description = "cup";
+        weight = 0.5;
+    }
     
+    //display method
+    public void display()
+    {
+        System.out.println("Item description: " + description);
+        System.out.println("Item weight: " + weight);
+    }
+    
+    //accessor methods
+    public String getDescription()
+    {
+        return description;
+    }
+    
+    public double getWeight()
+    {
+        return weight;
+    }
+    
+    //mutator methods
+    public void setDescription(String description)
+    {
+        this.description = description;
+    }
+    
+    public void setWeight(double weight)
+    {
+        this.weight = weight;
+    }
+}
+
+Exercise 8.21
+The Item class contains information about an item. The Room class creates an instance of an item in a room. The Game class calls a method in the Room class that
+references methods in the Item class. The Game class should print the information about the Item in the Room to ensure good cohesion is used.
+
+Exercise 8.22
+
+Exercise 8.23
+
+Exercise 8.24
+
+Exercise 8.25
+
+Exercise 8.26
+
+Exercise 8.27
+The number of rooms that can be accessed
+The number of items in a room
+The number of actions a player has
+
